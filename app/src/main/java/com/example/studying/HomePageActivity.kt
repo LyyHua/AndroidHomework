@@ -40,6 +40,7 @@ class HomePageActivity : ComponentActivity() {
 fun HomePageScreen(username: String, modifier: Modifier = Modifier, onSignOutClick: () -> Unit) {
     Column(modifier = modifier.padding(16.dp)) {
         Text(text = "Welcome, $username!", modifier = Modifier.padding(bottom = 24.dp))
+        Text(text = "Description: Ly is a handsome guy", modifier = Modifier.padding(bottom = 24.dp))
         Button(onClick = onSignOutClick, modifier = Modifier.fillMaxWidth()) {
             Text("Sign Out")
         }
